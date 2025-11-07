@@ -1,7 +1,7 @@
 import About from '@/components/about/about'
 import { Hero } from '../components/hero/hero'
 import Skills from '@/components/skils/skils'
-import Services1 from '@/components/services1/services1'
+import Services from '@/components/services/services'
 
 export default function Home() {
 	return (
@@ -9,7 +9,7 @@ export default function Home() {
 			<Hero />
 			<About />
 			<Skills />
-			<Services1 />
+			<Services />
 		</main>
 	)
 }
