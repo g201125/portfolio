@@ -3,7 +3,7 @@ import { Hero } from '../components/hero/hero'
 import Skills from '@/components/skils/skils'
 import Services from '@/components/services/services'
 import Works from '@/components/MyWork/Myworks'
-
+import Reviews from '@/components/reviews/reviews'
 
 export default function Home() {
 	return (
@@ -13,6 +13,7 @@ export default function Home() {
 			<Skills />
 			<Services />
 			<Works />
+			<Reviews />
 		</main>
 	)
 }
