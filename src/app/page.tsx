@@ -4,6 +4,7 @@ import Skills from '@/components/skils/skils'
 import Services from '@/components/services/services'
 import Works from '@/components/MyWork/Myworks'
 import Reviews from '@/components/reviews/reviews'
+import Fitbacks from '@/components/fitbacks/fitbacks'
 
 export default function Home() {
 	return (
@@ -14,6 +15,7 @@ export default function Home() {
 			<Services />
 			<Works />
 			<Reviews />
+			<Fitbacks />
 		</main>
 	)
 }
