@@ -5,10 +5,12 @@ import Services from '@/components/services/services'
 import Works from '@/components/MyWork/Myworks'
 import Reviews from '@/components/reviews/reviews'
 import Fitbacks from '@/components/fitbacks/fitbacks'
+import Contaks from '@/components/contakts/contaks'
 
 export default function Home() {
 	return (
 		<main>
+			<Contaks />
 			<Hero />
 			<About />
 			<Skills />
