@@ -10,7 +10,7 @@ import Contaks from '@/components/contakts/contaks'
 export default function Home() {
 	return (
 		<main>
-			<Contaks />
+
 			<Hero />
 			<About />
 			<Skills />
@@ -18,6 +18,7 @@ export default function Home() {
 			<Works />
 			<Reviews />
 			<Fitbacks />
+			<Contaks />
 		</main>
 	)
 }
