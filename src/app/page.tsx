@@ -6,6 +6,7 @@ import Works from '@/components/MyWork/Myworks'
 import Reviews from '@/components/reviews/reviews'
 import Fitbacks from '@/components/fitbacks/fitbacks'
 import Stats from '@/components/stats/stats'
+import Contacs from '@/components/contacs/contacs'
 
 
 export default function Home() {
@@ -20,6 +21,7 @@ export default function Home() {
 			<Reviews />
 			<Fitbacks />
 			<Stats />
+			<Contacs />
 		</main>
 	)
 }
