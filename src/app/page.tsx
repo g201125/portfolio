@@ -5,7 +5,8 @@ import Services from '@/components/services/services'
 import Works from '@/components/MyWork/Myworks'
 import Reviews from '@/components/reviews/reviews'
 import Fitbacks from '@/components/fitbacks/fitbacks'
-import Contaks from '@/components/contakts/contaks'
+import Stats from '@/components/stats/stats'
+
 
 export default function Home() {
 	return (
@@ -18,7 +19,7 @@ export default function Home() {
 			<Works />
 			<Reviews />
 			<Fitbacks />
-			<Contaks />
+			<Stats />
 		</main>
 	)
 }
