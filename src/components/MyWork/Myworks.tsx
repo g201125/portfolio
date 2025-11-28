@@ -34,30 +34,30 @@ const Works: React.FC = () => {
     const [selectedCategory, setSelectedCategory] = useState<Category>('all');
     const [visibleCount, setVisibleCount] = useState(6);
 
-    // Фильтрация по категории
+
     const filteredWorks = worksData.filter(
         (work) => selectedCategory === 'all' || work.category === selectedCategory
     );
 
-    // Работы, которые сейчас отображаются
+   
     const visibleWorks = filteredWorks.slice(0, visibleCount);
 
     const handleLoadMore = () => {
-        setVisibleCount((prev) => prev + 3); // загружать еще 3 работы
+        setVisibleCount((prev) => prev + 3); 
     };
 
     return (
         <section style={{ maxWidth: 800, margin: '0 auto', padding: 20, textAlign: 'center' }}>
             <h2 style={{ fontWeight: 'bold', marginBottom: 20 }}>Мои работы</h2>
 
-            {/* Категории */}
+   
             <nav style={{ marginBottom: 20 }}>
                 {categories.map((cat) => (
                     <button
                         key={cat.key}
                         onClick={() => {
                             setSelectedCategory(cat.key);
-                            setVisibleCount(6); // сбросить количество при смене категории
+                            setVisibleCount(6); 
                         }}
                         style={{
                             marginRight: 15,
@@ -73,7 +73,7 @@ const Works: React.FC = () => {
                 ))}
             </nav>
 
-            {/* Сетка работ */}
+          
             <div
                 style={{
                     display: 'grid',
@@ -92,7 +92,7 @@ const Works: React.FC = () => {
                 ))}
             </div>
 
-            {/* Кнопка загрузить еще */}
+        
             {visibleCount < filteredWorks.length && (
                 <button
                     onClick={handleLoadMore}

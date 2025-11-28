@@ -9,29 +9,39 @@ export default function PageStats() {
     ];
 
     return (
-        <section style={{ display: "flex", justifyContent: "center", gap: "20px", margin: "40px 0" }}>
-            {stats.map(({ label, value, img }, index) => (
-                <div
-                    key={index}
-                    style={{
-                        background: "#f8f9fd",
-                        padding: "20px",
-                        width: "279px",
-                        textAlign: "center",
-                        borderRadius: "4px",
-                        boxShadow: "0 0 10px rgba(0,0,0,0.05)",
-                        display: "flex",
-                        flexDirection: "column",
-                        alignItems: "center",
-                    }}
-                >
-                    <Image src={img} alt={label} width={60} height={60} />
-                    {/* Текст */}
-                    <div style={{ fontSize: "14px", color: "#333", marginBottom: "10px" }}>{label}</div>
-                    {/* Значение */}
-                    <div style={{ fontSize: "24px", fontWeight: "bold" }}>{value}</div>
-                </div>
-            ))}
+        <section className="my-10 px-4">
+            <div
+                className="
+                    grid 
+                    grid-cols-1 
+                    sm:grid-cols-2 
+                    lg:grid-cols-4 
+                    gap-6 
+                    max-w-6xl 
+                    mx-auto
+                "
+            >
+                {stats.map(({ label, value, img }, index) => (
+                    <div
+                        key={index}
+                        className="
+                            bg-[#f8f9fd] 
+                            p-6 
+                            rounded 
+                            shadow 
+                            flex flex-col 
+                            items-center 
+                            text-center
+                        "
+                    >
+                        <Image src={img} alt={label} width={60} height={60} />
+
+                        <div className="text-sm text-[#333] mt-3">{label}</div>
+
+                        <div className="text-2xl font-bold mt-1">{value}</div>
+                    </div>
+                ))}
+            </div>
         </section>
     );
 }
