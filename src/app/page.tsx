@@ -1,12 +1,11 @@
 import About from '@/components/about/about'
-import { Hero } from '../components/hero/hero'
-import Skills from '@/components/skils/skils'
+import { Hero } from '@/components/hero/hero'
+import Skills from '@/components/skills/skills'
 import Services from '@/components/services/services'
-import Works from '@/components/MyWork/Myworks'
-import Reviews from '@/components/reviews/reviews'
-import Fitbacks from '@/components/fitbacks/fitbacks'
+import Works from '@/components/works/works'
+import Feedbacks from '@/components/feedbacks/feedbacks'
 import Stats from '@/components/stats/stats'
-import Contacs from '@/components/contacs/contacs'
+import Contacts from '@/components/contacts/contacts'
 
 
 export default function Home() {
@@ -18,10 +17,9 @@ export default function Home() {
 			<Skills />
 			<Services />
 			<Works />
-			<Reviews />
-			<Fitbacks />
+			<Feedbacks />
 			<Stats />
-			<Contacs />
+			<Contacts />
 		</main>
 	)
 }
